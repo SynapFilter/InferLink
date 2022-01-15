@@ -5,19 +5,68 @@ Inferring Significant Links and Layers of Deep Neural Networks to Adversarial At
 
 The structure of the repository is organised as follows:
 
-├── Robustness_analysis
-│   ├── Dataset
-├── public
-│   ├── css
-│   │   ├── **/*.css
-│   ├── images
-│   ├── js
-│   ├── index.html
-├── dist (or build
-├── node_modules
-├── package.json
-├── package-lock.json 
-└── .gitignore
+```
+
+Robustness_analysis
+│   README.md
+│   synaptic_filtering.ipynb
+|   model_trainer.ipynb
+|   plots
+│
+└───Robustness_analysis
+│   └───Dataset
+|   |   └───MNIST
+|   |   |   └───processed
+|   |   |   |   └───test.pt
+|   |   |   |   └───training.pt
+|   |   |   └───raw
+|   |   |   |   └───t10k-images-idx3-ubyte
+|   |   |   |   └───t10k-images-idx3-ubyte.gz
+|   |   |   |   └───t10k-labels-idx3-ubyte
+|   |   |   |   └───t10k-labels-idx3-ubyte.gz
+|   |   |   |   └───train-images-idx3-ubyte
+|   |   |   |   └───train-images-idx3-ubyte.gz
+|   |   |   |   └───train-labels-idx3-ubyte
+|   |   |   |   └───train-labels-idx3-ubyte.gz
+
+
+|   |   └───CIFAR10
+|   |   |   └───cifar-10-python.tar.gz
+|   |   |   └───cifar-10-batches-py
+|   |   |   |   └───batches.meta
+|   |   |   |   └───data_batch_1
+|   |   |   |   └───data_batch_2
+|   |   |   |   └───data_batch_3
+|   |   |   |   └───data_batch_4
+|   |   |   |   └───data_batch_5
+|   |   |   |   └───readme.html
+|   |   |   |   └───test_batch
+
+|   |   └───tiny-imagenet-200
+|   |   |   └───complete_dataset
+|   |   |   |   └───test_set.pkl
+|   |   |   |   └───train_set.pkl
+|   └───saved_models
+|   |   └───ResNet18
+|   |   |   └───MNIST
+|   |   |   |   └───Init_1
+|   |   |   |   └───...
+|   |   |   |   └───Init_N
+|   |   |   |   └───global_data
+|   |   |   |   └───Step_minmax
+|   |   |   |   └───Step_maxmin
+|   |   |   |   └───Pulse_minmax
+
+|   |   |   └───CIFAR10
+|   |   |   └───ImageNet
+|   |   |   |   └───
+
+
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
+```
 
 ## Describe code -> clearly say how to run code
 
