@@ -1,7 +1,23 @@
 # InferLink
 Inferring Significant Links and Layers of Deep Neural Networks to Adversarial Attacks Using Synaptic Filtering
 
-## Structure of repositry -> _what is the file and how to run it_
+## Structure of repository
+
+The structure of the repository is organised as follows:
+
+├── Robustness_analysis
+│   ├── Dataset
+├── public
+│   ├── css
+│   │   ├── **/*.css
+│   ├── images
+│   ├── js
+│   ├── index.html
+├── dist (or build
+├── node_modules
+├── package.json
+├── package-lock.json 
+└── .gitignore
 
 ## Describe code -> clearly say how to run code
 
