@@ -68,7 +68,9 @@ Robustness_analysis
     │   file022.txt
 ```
 
-## Describe code -> clearly say how to run code
+## Running code
+
+To run the experiments, open the .ipynb from root directory and follow cell comments. 
 
 ## links to datasets (open source dataset)
 
