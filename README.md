@@ -62,11 +62,6 @@ Robustness_analysis
 |   |   |   |   └───
 
 
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
-```
 
 ## Running code
 
@@ -74,7 +69,45 @@ To run the experiments, open the .ipynb from root directory and follow cell comm
 
 ## links to datasets (open source dataset)
 
-## What are the files and what are their purpose -> the order in which the notebooks should be ran  
+MNIST - http://yann.lecun.com/exdb/mnist/
+CIFAR10 - https://www.cs.toronto.edu/~kriz/cifar.html
+ImageNet Tiny - https://www.kaggle.com/c/tiny-imagenet
 
-## Dependencies -> showing the colab TPU dependenices 
+
+## What are the files and what are their purpose
+
+1) The networks first need to be trained and saved into different Init folders within Saved_model->Network_name->dataset_name->Init_i. the networks can eb trained using the model_trainer.ipynb notebook, cell instructions are provideed within the notebook.
+
+2) After the networks have been trained and svaed within the correct directories, it ispossible to run the synaptic filtering expeirments from the Synaptic_filtering.ipynb notebook. Here there are options for global and local anlaysis.
+
+## Dependencies
+
+To train and run the synaptic filtering experimetns on all networks, the following dependencies are required:
+
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator, FormatStrFormatter, AutoMinorLocator
+from tqdm.notebook import tqdm
+import copy
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import DataLoader
+from torch.autograd import Variable
+
+import torch_xla
+import torch_xla.core.xla_model as xm
+import torch_xla.distributed.xla_multiprocessing as xmp
+import torch_xla.distributed.parallel_loader as pll
+import torch_xla.utils.serialization as xser
+
+import torchvision.transforms as transforms
+import torchvision.datasets
+
+import random
+import os
+import pickle
+
 
