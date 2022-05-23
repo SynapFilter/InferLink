@@ -1,9 +1,18 @@
 # InferLink
-Inferring the fragility, robustness and antifragility of links and layers in deep neural networks using synaptic filters.
+Inferring the fragility, robustness and antifragility of links and layers in deep neural networks using synaptic filters. We define frgaile links and layers
 
 ## The Algorithm
 
-The Synaptic filtering algorithm is a signal processing tool to decipher fragile, robust and antifragile links and layers in deep neural networks. The synaptic filtering algorithm is applied to a network with $`l`$ nodes (layers) and $`\theta`$ vertices (links) that are perturbed using systematic ablation of the synaptic links. We apply discrete parameter thresholds using three different types of synaptic filters: (1) the optimal low-pass filter, (2) the optimal high-pass filter, and (3) the pulse wave filter. We use the response of networks to the different synaptic filters to characterise fragile, robust and antifragile parameters of the evaluated networks       
+The Synaptic filtering algorithm is a signal processing tool to decipher fragile, robust and antifragile links and layers in deep neural networks. The synaptic filtering algorithm is applied to a network with $`l`$ nodes (layers) and $`\theta`$ vertices (links) that are perturbed using systematic ablation of the synaptic links. We apply discrete parameter thresholds using three different types of synaptic filters: (1) the optimal low-pass filter, (2) the optimal high-pass filter, and (3) the pulse wave filter. We use the response of networks to the different synaptic filters to characterise fragile, robust and antifragile parameters of the evaluated networks. We further evaluate the network responses to the synaptic filters against an adversarial attack and compare the adversarial responses to the network response to a clean dataset and in doing so, we highlight parameters targeted by the adversary.
+
+## Dependencies and Configurations
+
+The Synaptic filtering algorithm is written in Python version 3.7.13 on Google Colab notebooks and is compatible with TPU useage. The code contains the following dependencies:
+
+* [Pytorch 1.11.0](https://pytorch.org/get-started/locally/)
+* [XLA Pytorch TPU client 0.10](https://github.com/pytorch/xla)
+* 
+
 
 ## Structure of repository
 
