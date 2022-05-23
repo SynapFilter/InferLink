@@ -1,5 +1,9 @@
 # InferLink
-Inferring Significant Links and Layers of Deep Neural Networks to Adversarial Attacks Using Synaptic Filtering
+Inferring the fragility, robustness and antifragility of links and layers in deep neural networks.
+
+## The Algorithm
+
+The InferLink algorithm is a signal processing tools to decipher  
 
 ## Structure of repository
 
