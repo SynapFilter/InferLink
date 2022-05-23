@@ -1,9 +1,9 @@
 # InferLink
-Inferring the fragility, robustness and antifragility of links and layers in deep neural networks.
+Inferring the fragility, robustness and antifragility of links and layers in deep neural networks using synaptic filters.
 
 ## The Algorithm
 
-The InferLink algorithm is a signal processing tools to decipher  
+The Synaptic filtering algorithm is a signal processing tool to decipher fragile, robust and antifragile links and layers in deep neural networks. The synaptic filtering algorithm is applied to a network with $`l`$ nodes (layers) and $`\theta`$ vertices (links) that are perturbed using systematic ablation of the synaptic links. We apply discrete parameter thresholds using three different types of synaptic filters: (1) the optimal low-pass filter, (2) the optimal high-pass filter, and (3) the pulse wave filter. We use the response of networks to the different synaptic filters to characterise fragile, robust and antifragile parameters of the evaluated networks       
 
 ## Structure of repository
 
