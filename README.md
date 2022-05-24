@@ -7,14 +7,20 @@ The Synaptic filtering algorithm is a signal processing tool to decipher fragile
 
 ## Dependencies and Configurations
 
-The Synaptic filtering algorithm is written in Python version 3.7.13 on Google Colab notebooks and is compatible with TPU useage. The code contains the following dependencies:
+The Synaptic filtering algorithm is written in Python version 3.7.13 on Google Colab notebooks and is compatible with TPU runtime. The code contains the following dependencies:
 
 * [Pytorch 1.11.0](https://pytorch.org/get-started/locally/)
 * [XLA Pytorch TPU client 0.10](https://github.com/pytorch/xla)
-* 
+* [NumPy 1.21.6](https://numpy.org/)
+* [SciPy 1.4.1](https://scipy.org/)
+* [Torchvision 0.12.0+cu113](https://pytorch.org/vision/stable/index.html)
+
+For plotting diagrams, the following dependency is required:
+
+* [Matplotlib 3.2.2](https://matplotlib.org/)
 
 
-## Structure of repository
+## Project Structure
 
 The structure of the repository is organised as follows:
 
